@@ -1,0 +1,130 @@
+.container-fluid {
+  height: 400px;
+  width: 400px;
+}
+
+.ui-dialog-titlebar-close {
+  /* hide close button on modal dialog */
+  visibility: hidden;
+}
+
+div {
+  padding: 10px;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  color: Black;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.board {
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  color: White;
+  background-color: Black;
+}
+
+.cell {
+  margin: 5%;
+  font-size: 3em;
+}
+
+
+/* board grid */
+
+#top-left {
+  border-right: 1px solid White;
+  border-bottom: 1px solid White;
+}
+
+#top-middle {
+  border-right: 1px solid White;
+  border-bottom: 1px solid White;
+}
+
+#top-right {
+  border-bottom: 1px solid White;
+}
+
+#middle-left {
+  border-right: 1px solid White;
+  border-bottom: 1px solid White;
+}
+
+#middle-middle {
+  border-right: 1px solid White;
+  border-bottom: 1px solid White;
+}
+
+#middle-right {
+  border-bottom: 1px solid White;
+}
+
+#bottom-left {
+  border-right: 1px solid White;
+}
+
+#bottom-middle {
+  border-right: 1px solid White;
+}
+
+
+/* draw winner's line */
+
+hr#horizontal {
+  position: absolute;
+  top: 28px;
+  border: 0px;
+  width: 275%;
+  background-color: White;
+  height: 5px;
+}
+
+hr#vertical {
+  position: absolute;
+  top: 140px;
+  left: -108px;
+  border: 0px;
+  width: 300%;
+  background-color: White;
+  height: 5px;
+  transform: rotate(90deg);
+}
+
+hr#left-diagonal {
+  position: absolute;
+  top: 140px;
+  left: -55px;
+  border: 0px;
+  width: 400%;
+  background-color: White;
+  height: 5px;
+  transform: rotate(45deg);
+}
+
+hr#right-diagonal {
+  position: absolute;
+  top: 140px;
+  right: -55px;
+  border: 0px;
+  width: 400%;
+  background-color: White;
+  height: 5px;
+  transform: rotate(-45deg);
+}
+
+.userScore {
+  margin-top: -20%;
+  color: Green;
+}
+
+.computerScore {
+  margin-top: -20%;
+  color: Red;
+}
